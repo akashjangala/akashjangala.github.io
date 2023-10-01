@@ -78,6 +78,15 @@
         .container h2, .container p, .container h3 {
             opacity: 1; /* Set text opacity to make it transparent */
             text-align: right; /* Align the text to the right */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; /* Align the items to the right within the container */
+            height: 100vh; /* Set the container to full viewport height for vertical centering */
+            width: 100%; /* Set the container width to 100% */
+            position: absolute; /* Position the container absolutely */
+            top: 50%; /* Move the container down by 50% of the viewport height */
+            transform: translateY(-50%); /* Adjust the position to vertically center it */
         }
         
     </style>
