@@ -75,7 +75,33 @@
             top: 50%; /* Move the container down by 50% of the viewport height */
             transform: translateY(-50%); /* Adjust the position to vertically center it */
         }
-        .container h2, .container p, .container h3 {
+        .container h2{
+            opacity: 1; /* Set text opacity to make it transparent */
+            text-align: right; /* Align the text to the right */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; /* Align the items to the right within the container */
+            height: 100vh; /* Set the container to full viewport height for vertical centering */
+            width: 100%; /* Set the container width to 100% */
+            position: absolute; /* Position the container absolutely */
+            top: 30%; /* Move the container down by 50% of the viewport height */
+            transform: translateY(-50%); /* Adjust the position to vertically center it */
+        }
+        .container h3 {
+            opacity: 1; /* Set text opacity to make it transparent */
+            text-align: right; /* Align the text to the right */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end; /* Align the items to the right within the container */
+            height: 100vh; /* Set the container to full viewport height for vertical centering */
+            width: 100%; /* Set the container width to 100% */
+            position: absolute; /* Position the container absolutely */
+            top: 40%; /* Move the container down by 50% of the viewport height */
+            transform: translateY(-50%); /* Adjust the position to vertically center it */
+        }
+        .container p {
             opacity: 1; /* Set text opacity to make it transparent */
             text-align: right; /* Align the text to the right */
             display: flex;
@@ -116,7 +142,7 @@
 
     <div class="container">
         <h2 style="text-align: center;">Stay Safe Online</h2>
-        <p style="text-align: center;">Hackers only need to get it right once, we need to get it right every time</p>
+        <h3 style="text-align: center;">Hackers only need to get it right once, we need to get it right every time</h3>
         
         <p> Welcome to my corner of the internet, where my passion for cybersecurity finds its digital home.</p>
         <p> This website is dedicated to all fellow cybersecurity enthusiasts out there, providing a hub for</p>
