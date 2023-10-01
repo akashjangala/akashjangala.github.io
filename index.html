@@ -56,8 +56,8 @@
         }
 
         }
-        .container h2{
-            opacity: 1; /* Set text opacity to make it transparent */
+        .container {
+            opacity: 1; /* Set text opacity to make it fully visible */
             font-family: "EB Garamond", serif;
             text-align: right; /* Align the text to the right */
             display: flex;
@@ -67,9 +67,9 @@
             height: 100vh; /* Set the container to full viewport height for vertical centering */
             width: 100%; /* Set the container width to 100% */
             position: absolute; /* Position the container absolutely */
-            top: -50%; /* Move the container down by 50% of the viewport height */
-            left: 50%; /* Move the container left by 20% of the viewport */
-            transform: translateY(-50%); /* Adjust the position to vertically center it */
+            top: 50%; /* Move the container down by 50% of the viewport height */
+            left: 50%; /* Move the container horizontally by 50% of the viewport width */
+            transform: translate(-50%, -50%); /* Adjust the position to center it both vertically and horizontally */
         }
         .container h3 {
             opacity: 1; /* Set text opacity to make it transparent */
