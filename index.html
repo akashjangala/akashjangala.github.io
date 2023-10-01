@@ -27,12 +27,13 @@
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
             padding: 10px 20px; /* Adjust padding as needed */
             border-radius: 5px; /* Add rounded corners for a stylish look */
-            text-align: right; /* Align the text to the right within the navigation bar */
+            display: flex; /* Use flexbox for layout */
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Vertically center items */
         }
         nav .centered-text {
             text-align: center; /* Center the text horizontally */
             margin: 0 auto; /* Center the text vertically */
-            vertical-align: middle; /* Vertically center the centered text */
         }
         nav .centered-text p {
             font-size: 36px; /* Change the font size for the centered text */
@@ -42,8 +43,6 @@
             color: rgba(255, 255, 255, 0.7); /* Transparent text color */
             text-decoration: none;
             margin-right: 20px;
-            display: inline-block; /* Make the anchor elements behave as blocks */
-            vertical-align: middle; /* Vertically center the anchor elements */
         }
         .content {
             max-width: 800px;
