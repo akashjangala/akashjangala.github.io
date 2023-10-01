@@ -1,122 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<img src="images/mainpage.png">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Your Website</h1>
+    </header>
+    
+    <nav>
+        <a href="tools.html">Tools</a>
+        <a href="cyberconcepts.html">CyberConcepts</a>
+        <a href="cybernews.html">CyberNews</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">CyberAdvancement</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="tools.html" class="w3-bar-item w3-button">Tools</a>
-      <a href="cyberconcepts.html" class="w3-bar-item w3-button">CyberConcepts</a>
-      <a href="cybernews.html" class="w3-bar-item w3-button">CyberNews</a>
-      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    <div class="content">
+        <h2>Welcome to Your Website</h2>
+        <p>This is the place where you can find valuable information about various topics.</p>
+        
+        <img src="images/mainpage.png" alt="Description of your image">
+        
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, ex vel iaculis pulvinar, tellus arcu laoreet metus.</p>
     </div>
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Me</h1><br>
-      <p class="w3-large">Hello, I'm Akash Yadav Jangala. As I stand here on my 24th journey around the Sun, it's awe-inspiring to realize that Earth has been on its cosmic voyage for 4.54 billion revolutions. To put it precisely, I am just a tiny fraction, about 0.00000000528634361233 times, of the age of our remarkable planet. Welcome to my corner of the web, where I share my experiences, knowledge, thoughts, and cybersecurity tools.
+    <!-- Add more content sections as needed -->
 
-To offer a brief introduction about myself, I completed my undergraduate studies in Electronics and Communication Engineering at Anurag University. Currently, I'm in the final semester of my Master of Science program in Cybersecurity at the University of Tampa. You might wonder why there's been a significant shift in my academic journey, transitioning from my undergraduate field to cybersecurity.
-
-I started my academic journey uncertain about my interests and explored various fields such as Artificial Intelligence, VLSI Physical Design Engineering, Embedded Systems, and programming. It wasn't until my second year when I attended a cybersecurity workshop that everything fell into place.
-
-Early in my undergraduate years, I explored various fields, including Artificial Intelligence, VLSI Physical Design Engineering, Embedded Systems, and programming, seeking to discover my true passion. It was in my second year that I stumbled upon a cybersecurity workshop, and something clicked. I developed a deep passion for this field.
-
-I further honed my skills through two years of work as a Penetration Tester Intern. However, I realized that to truly excel in the industry, I needed more knowledge and expertise. That's when I made the decision to pursue a Master's degree in Cybersecurity at the University of Tampa.
-
-My journey has been one of constant exploration, learning, and adaptation, and I'm excited to share my experiences, insights, and knowledge in the field of cybersecurity with you.
- </p>
-      
-    </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Menu Section -->
-  <div class="w3-row w3-padding-64" id="menu">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Our Menu</h1><br>
-      <h4>Bread Basket</h4>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h4>Honey Almond Granola with Fruits</h4>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h4>Scrambled eggs</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
-    </div>
-    
-    <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contact</h1><br>
-    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
-    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-  
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
 </body>
 </html>
-
