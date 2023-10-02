@@ -75,16 +75,12 @@
             padding: 20px;
             margin-left: 20%; /* Add left margin to move the header to the right */
         }
+        /* Style for tool content */
         .tool-content {
             display: none;
         }
 
-        /* Radio button hack to toggle content */
-        input[type="radio"] {
-            display: none;
-        }
-
-        input[type="radio"]:checked + .tool-content {
+        .tool-content:target {
             display: block;
         }
     </style>
