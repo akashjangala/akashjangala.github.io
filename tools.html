@@ -85,10 +85,10 @@
     <div class="left-nav">
         <h2>Navigation</h2>
         <ul>
-            <li><a href="javascript:void(0);" onclick="showTool(1)">Tool1</a></li>
-            <li><a href="javascript:void(0);" onclick="showTool(2)">Tool2</a></li>
-            <li><a href="javascript:void(0);" onclick="showTool(3)">Tool3</a></li>
-            <li><a href="javascript:void(0);" onclick="showTool(4)">Tool4</a></li>
+            <li><a href="#tool1">Tool1</a></li>
+            <li><a href="#tool2">Tool2</a></li>
+            <li><a href="#tool3">Tool3</a></li>
+            <li><a href="#tool4">Tool4</a></li>
         </ul>
     </div>
     
@@ -102,40 +102,26 @@
         </nav>
     </div>
 
-    <!-- Tool content divs -->
-    <div id="tool1" class="tool-content" style="display:none;">
+    <!-- Tool content sections -->
+    <div id="tool1" class="tool-content">
         <h2>Tool1</h2>
         <p>This is content for Tool1.</p>
     </div>
 
-    <div id="tool2" class="tool-content" style="display:none;">
+    <div id="tool2" class="tool-content">
         <h2>Tool2</h2>
         <p>This is content for Tool2.</p>
     </div>
 
-    <div id="tool3" class="tool-content" style="display:none;">
+    <div id="tool3" class="tool-content">
         <h2>Tool3</h2>
         <p>This is content for Tool3.</p>
     </div>
 
-    <div id="tool4" class="tool-content" style="display:none;">
+    <div id="tool4" class="tool-content">
         <h2>Tool4</h2>
         <p>This is content for Tool4.</p>
     </div>
-
-    <script>
-        function showTool(toolNumber) {
-            // Hide all tool content divs
-            var toolContentDivs = document.querySelectorAll(".tool-content");
-            toolContentDivs.forEach(function(div) {
-                div.style.display = "none";
-            });
-
-            // Show the selected tool content
-            var selectedTool = document.getElementById("tool" + toolNumber);
-            selectedTool.style.display = "block";
-        }
-    </script>
 
 </body>
 </html>
