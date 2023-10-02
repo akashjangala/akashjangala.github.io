@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: #ff5733;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#tool1">Tool 1</a></li>
+                <li><a href="#tool2">Tool 2</a></li>
+                <li><a href="#tool3">Tool 3</a></li>
+                <!-- Add more tools as needed -->
+            </ul>
+        </div>
+        <div class="content">
+            <section id="tool1">
+                <h2>Tool 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla libero id suscipit. ...</p>
+            </section>
+            <section id="tool2">
+                <h2>Tool 2</h2>
+                <p>Tool 2 content goes here.</p>
+            </section>
+            <section id="tool3">
+                <h2>Tool 3</h2>
+                <p>Tool 3 content goes here.</p>
+            </section>
+            <!-- Add more content sections for additional tools -->
+        </div>
+    </div>
+</body>
+</html>
 
