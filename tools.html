@@ -38,6 +38,12 @@
         .left-nav a:hover {
             text-decoration: underline;
         }
+        
+        /* Style for the heading in the navigation bar */
+        .left-nav h2 {
+            text-align: center; /* Center-align the heading */
+            margin-bottom: 20px; /* Add spacing below the heading */
+        }
 
         /* Style for top navigation bar */
         .top-nav {
@@ -77,12 +83,12 @@
         <h3>The Tools section provides valuable insights into a wide range of cybersecurity tools and commands essential for enhancing your proficiency in cybersecurity operations.</h3>
     </header>
     <div class="left-nav">
-        <h2>Navigation</h2> <!-- Heading for the navigation bar -->
+        <h2>Navigation</h2>
         <ul>
-            <li><a href="#">Tool1</a></li>
-            <li><a href="#">Tool2</a></li>
-            <li><a href="#">Tool3</a></li>
-            <li><a href="#">Tool4</a></li>
+            <li><a href="javascript:void(0);" onclick="showTool(1)">Tool1</a></li>
+            <li><a href="javascript:void(0);" onclick="showTool(2)">Tool2</a></li>
+            <li><a href="javascript:void(0);" onclick="showTool(3)">Tool3</a></li>
+            <li><a href="javascript:void(0);" onclick="showTool(4)">Tool4</a></li>
         </ul>
     </div>
     
@@ -96,7 +102,40 @@
         </nav>
     </div>
 
-    <!-- The rest of your content goes here -->
+    <!-- Tool content divs -->
+    <div id="tool1" class="tool-content" style="display:none;">
+        <h2>Tool1</h2>
+        <p>This is content for Tool1.</p>
+    </div>
+
+    <div id="tool2" class="tool-content" style="display:none;">
+        <h2>Tool2</h2>
+        <p>This is content for Tool2.</p>
+    </div>
+
+    <div id="tool3" class="tool-content" style="display:none;">
+        <h2>Tool3</h2>
+        <p>This is content for Tool3.</p>
+    </div>
+
+    <div id="tool4" class="tool-content" style="display:none;">
+        <h2>Tool4</h2>
+        <p>This is content for Tool4.</p>
+    </div>
+
+    <script>
+        function showTool(toolNumber) {
+            // Hide all tool content divs
+            var toolContentDivs = document.querySelectorAll(".tool-content");
+            toolContentDivs.forEach(function(div) {
+                div.style.display = "none";
+            });
+
+            // Show the selected tool content
+            var selectedTool = document.getElementById("tool" + toolNumber);
+            selectedTool.style.display = "block";
+        }
+    </script>
 
 </body>
 </html>
