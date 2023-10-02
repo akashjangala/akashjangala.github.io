@@ -7,87 +7,55 @@
     <style>
         /* Add your CSS styles here */
         body {
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
+            margin: 0;
+            padding: 0;
             font-family: Roboto, sans-serif;
-            background: url('images/mainpage.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: rgba(255, 255, 255, 1); /* color: #fff;  Text color on the image */
+            background-color: #3498db; /* Cool blue background color */
+            color: #fff;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the top navigation bar */
             padding: 20px;
             text-align: center;
         }
 
         nav {
-            position: absolute;
-            font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
-            top: 0; /* Extend to the top margin */
-            right: 0;
-            left: 0; /* Extend to the left margin */
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-            padding: 20px 5px; /* Adjust padding as needed */
-            border-radius: 5px; /* Add rounded corners for a stylish look */
-            display: flex; /* Use flexbox for layout */
-            justify-content: flex-end; /* Align items to the right */
-            align-items: center; /* Vertically center items */
-        }
-
-        nav1 {
-            position: absolute;
-            font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
-            top: -30px; /* Position at the top of the navigation bar */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Adjust for centering */
-            text-align: center; /* Center the text horizontally */
-            font-size: 36px; /* Change the font size for the centered text */
-            margin: 0; /* Remove margin to keep the previous size */
-        }
-
-        nav a {
-            color: rgba(255, 255, 255, 1); /* Full opacity text color */
-            font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
-            text-decoration: none;
-            margin-right: 20px;
+            background-color: #2c3e50; /* Cool dark blue background color for the side navigation bar */
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow-y: auto; /* Add scroll if content exceeds height */
         }
 
         .container {
-            text-align: center;
+            display: flex;
+            margin-top: 70px; /* Adjust margin to make space for the top navigation bar */
+            margin-left: 250px; /* Width of the side navigation bar */
+            padding: 20px;
         }
 
-        .container h1 {
-            position: absolute;
-            font-family: "Amasis MT Pro", sans-serif; /* Use the "Amasis MT Pro" font */
-            top: 25%;
-            right: 23%;
-            transform: translateY(-50%);
-            text-align: right;
-            margin: 20px; /* Add margin for spacing */
-            max-width: 400px; /* Limit the width of the container */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .container h2 {
-            position: absolute;
-            font-family: "Amasis MT Pro", sans-serif; /* Use the "Amasis MT Pro" font */
-            top: 30%;
-            right: 8%;
-            transform: translateY(-50%);
-            text-align: right;
-            margin: 20px; /* Add margin for spacing */
-            max-width: 1000px; /* Limit the width of the container */
+        nav li {
+            margin-bottom: 10px;
         }
 
-        .container h3 {
-            position: absolute;
-            font-family: "Amasis MT Pro", sans-serif; /* Use the "Amasis MT Pro" font */
-            top: 41.5%;
-            right: 4%;
-            transform: translateY(-50%);
-            text-align: justify;
-            margin: 20px; /* Add margin for spacing */
-            max-width: 1100px; /* Limit the width of the container */
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #3498db; /* Blue color on hover for side navigation links */
         }
     </style>
 </head>
@@ -108,15 +76,23 @@
             <a href="contact.html">Contact</a> <!-- Contact on the right -->
         </div>
     </nav>
-    <nav1>
-        <div>
-            <p>CyberAdvancement</p> <!-- Change font size to 36px -->
-        </div>
-    </nav1>
-    
-    <!-- Your content here -->
+
     <div class="container">
-        <!-- Content sections go here -->
+        <div class="content">
+            <section id="tool1">
+                <h2>Tool 1</h2>
+                <p>Tool 1 content goes here.</p>
+            </section>
+            <section id="tool2">
+                <h2>Tool 2</h2>
+                <p>Tool 2 content goes here.</p>
+            </section>
+            <section id="tool3">
+                <h2>Tool 3</h2>
+                <p>Tool 3 content goes here.</p>
+            </section>
+            <!-- Add more content sections for additional tools -->
+        </div>
     </div>
 </body>
 </html>
