@@ -77,11 +77,7 @@
         }
         /* Style for tool content */
         .tool-content {
-            display: block;
-        }
-
-        :target .tool-content{
-            display: block;
+            display: none;
         }
     </style>
 </head>
@@ -93,10 +89,10 @@
     <div class="left-nav">
         <h2>Navigation</h2>
         <ul>
-            <li><a href="#tool1">Tool1</a></li>
-            <li><a href="#tool2">Tool2</a></li>
-            <li><a href="#tool3">Tool3</a></li>
-            <li><a href="#tool4">Tool4</a></li>
+            <li><button onclick="showTool(1)">Tool1</button></li>
+            <li><button onclick="showTool(2)">Tool2</button></li>
+            <li><button onclick="showTool(3)">Tool3</button></li>
+            <li><button onclick="showTool(4)">Tool4</button></li>
         </ul>
     </div>
     
@@ -130,6 +126,20 @@
         <h2>Tool4</h2>
         <p>This is content for Tool4.</p>
     </div>
+
+    <script>
+        function showTool(toolNumber) {
+            // Hide all tool content divs
+            var toolContentDivs = document.querySelectorAll(".tool-content");
+            toolContentDivs.forEach(function(div) {
+                div.style.display = "none";
+            });
+
+            // Show the selected tool content
+            var selectedTool = document.getElementById("tool" + toolNumber);
+            selectedTool.style.display = "block";
+        }
+    </script>
 
 </body>
 </html>
