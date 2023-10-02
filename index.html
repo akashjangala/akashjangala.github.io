@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools Page</title>
+    <title>Home</title>
     <style>
         /* Add your CSS styles here */
         body {
-            margin: 0;
-            padding: 0;
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
             font-family: Roboto, sans-serif;
-            background-color: #3498db; /* Cool blue background color */
-            color: #fff;
+            background: url('images/mainpage.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgba(255, 255, 255, 1);
+            /* color: #fff;  Text color on the image */
         }
-
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            padding: 20px;
+            text-align: center;
+        }
         nav {
             position: absolute;
             font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
@@ -27,7 +33,6 @@
             justify-content: flex-end; /* Align items to the right */
             align-items: center; /* Vertically center items */
         }
-
         nav1 {
             position: absolute;
             font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
@@ -38,42 +43,55 @@
             font-size: 36px; /* Change the font size for the centered text */
             margin: 0; /* Remove margin to keep the previous size */
         }
-
         nav a {
             color: rgba(255, 255, 255, 1); /* Full opacity text color */
             font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
             text-decoration: none;
             margin-right: 20px;
         }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the top navigation bar */
-            padding: 20px;
+        .container {
             text-align: center;
         }
 
-        .container {
-            display: flex;
-            margin-top: 70px; /* Adjust margin to make space for the top navigation bar */
-            margin-left: 250px; /* Width of the side navigation bar */
-            padding: 20px;
+        .container h1 {
+            position: absolute;
+            font-family: "Amasis MT Pro", sans-serif; /* Use the "Amasis MT Pro" font */
+            top: 25%;
+            right: 23%;
+            transform: translateY(-50%);
+            text-align: right;
+            margin: 20px; /* Add margin for spacing */
+            max-width: 400px; /* Limit the width of the container */
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        .container h2 {
+            position: absolute;
+            font-family: "Amasis MT Pro", sans-serif; /* Use the "Amasis MT Pro" font */
+            top: 30%;
+            right: 8%;
+            transform: translateY(-50%);
+            text-align: right;
+            margin: 20px; /* Add margin for spacing */
+            max-width: 1000px; /* Limit the width of the container */
         }
 
-        nav li {
-            margin-bottom: 10px;
+        .container h3 {
+            position: absolute;
+            font-family: "Amasis MT Pro", sans-serif; /* Use the "Amasis MT Pro" font */
+            top: 41.5%;
+            right: 4%;
+            transform: translateY(-50%);
+            text-align: justify;
+            margin: 20px; /* Add margin for spacing */
+            max-width: 1100px; /* Limit the width of the container */
         }
 
-        nav a:hover {
-            background-color: #3498db; /* Blue color on hover for side navigation links */
-        }
+        
     </style>
-</head>
+
+    
 <body>
+    
     <nav>
         <div>
             <a href="index.html">Home</a> <!-- Home on the left -->
@@ -90,28 +108,17 @@
         </div>
     </nav1>
 
-    <header>
-        <h1>Your Page Title</h1>
-        <h2>Your Page Subtitle</h2>
-        <h3>Your Page Description</h3>
-    </header>
-    
     <div class="container">
-        <div class="content">
-            <section id="tool1">
-                <h2>Tool 1</h2>
-                <p>Tool 1 content goes here.</p>
-            </section>
-            <section id="tool2">
-                <h2>Tool 2</h2>
-                <p>Tool 2 content goes here.</p>
-            </section>
-            <section id="tool3">
-                <h2>Tool 3</h2>
-                <p>Tool 3 content goes here.</p>
-            </section>
-            <!-- Add more content sections for additional tools -->
-        </div>
+        <h1>Stay Safe Online</h1>
+        <h2>Hackers only need to get it right once, we need to get it right every time</h2>
+        <h3>Welcome to my corner of the internet, where my passion for cybersecurity finds its digital home. 
+            <br>This website is dedicated to all fellow cybersecurity enthusiasts out there, providing a hub for the
+            <br>latest news, essential tools, and fundamental concepts in the field. It's not just a platform to quench
+            <br>your thirst for knowledge; it's also an opportunity for me to share my own passion and expertise with you.
+            <br>Whether you're a seasoned pro or just starting out, together, we'll dive into the dynamic world 
+            <br>of cybersecurity and continue to expand our collective understanding and expertise. Welcome aboard!</h3>
     </div>
+
+    
 </body>
 </html>
